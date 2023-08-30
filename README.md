@@ -21,7 +21,6 @@ I will check the permissions for all files in the directory, including any hidde
 
 
 <h2>Check file and Directory details:</h2>
-I will explore the permissions of the projects diretory and the files it contains. <br> 
 The lab starts with /home/researcher2 as the current working directory. This is because I'm changing permissions for files and directories belonging to the researcher2 user. <br>
 1. The cd projects command navigates to the projects directory. <br>
 2. The ls -l command lists the contents and permissions of the projects directory. This shows the reserch_team owns the files in the projects directory.<br>
@@ -29,7 +28,7 @@ The lab starts with /home/researcher2 as the current working directory. This is 
 <img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 <h2>Change file permissions:</h2>
-I will determine whether any files have incorrect permissions and then change the permissions as needed. This action will remove unauthorized access and strengthen security on the system. <br>
+This shows whether any files have incorrect permissions and then change the permissions as needed. This action will remove unauthorized access and strengthen security on the system. <br>
 1. Check whether any files in the projects directory have written permissions for the owner type with the ls -l command. This shows the project_k.txt file has write permissions for other users. <br>
 2. I will change the permissions of the file identified in the previous step so that the owener type of other doesn't have write permissions. I have used the chmod command for this. <br>
 (*)note - Permissions are granted for three different types of owners, namely user, group and other.(*) <br>
@@ -39,14 +38,14 @@ I will determine whether any files have incorrect permissions and then change th
 <img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 <h2>Change file permissions on a hidden file:</h2>
-In this task, I will determine if a hidden file has incorrect permissions and then change the permissions as needed. This action will further remove unauthorized access and strengthen security on the system.<br>
+Next I will determine if a hidden file has incorrect permissions and then change the permissions as needed. This action will further remove unauthorized access and strengthen security on the system.<br>
 The file .project_x.txt is a hidden file that has been archived and should not be written to by anyone. (The user and group should still be able to read this file.) <br>
 1. Check the permissions of the hidden file .project_x.txt and answer the question that follows. The command to complete this step is ls -la. This shows the user and owner types have inncorrect write permissions. <br>
 2. I will change the permissions of the file .project_x.txt so that both the user and the group can read, but not write to, the file using the chmod u-w,g-w,g+r .project_x.txt <br>
 note - Always start the name of a hidden file with a period (.) <br>
 
 <h2>Change directory permissions</h2>
-Next I will change the permissions of a directory. First, I'll check the group permissions of the /home/researcher2/projects/drafts directory and then modify the permissions as required. (It's important to be in the projects directory while managing the permissions of its subdirectory drafts.) <br>
+Finally, I will change the permissions of a directory. First, I'll check the group permissions of the /home/researcher2/projects/drafts directory and then modify the permissions as required. (It's important to be in the projects directory while managing the permissions of its subdirectory drafts.) <br>
 Only the researcher2 user should be allowed to access the drafts directory and its contents. (This means that only researcher2 should have execute privileges.) <br>
 1. I will check the permissions of the drafts directory and answer the following question using the ls -l command. It shows the group has execute permissions and therefore has access to the drafts directory. <br>
 2. I will remove the execute permission for the group from the drafts directory with the chmod command.<br>
