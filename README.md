@@ -1,26 +1,34 @@
-<h1>Acive Directory Home Lab </h1>
+<h1>Linuq | Manage Authorization  </h1>
 
  ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
 
 <h2>Description</h2>
-Project consists of a simple PowerShell script that walks the user through "zeroing out" (wiping) any drives that are connected to the system. The utility allows you to select the target disk and choose the number of passes that are performed. The PowerShell script will configure a diskpart script file based on the user's selections and then launch Diskpart to perform the disk sanitization.
+In this lab activity, I’ll use Linux commands to configure authorization.
+
+Authorization is the concept of granting access to specific resources in a system. It's important because without authorization any user could access and modify all files belonging to other users or system files. This would certainly be a security risk.
+
+In Linux, file and directory permissions are used to specify who has access to specific files and directories. I’ll explore file and directory permissions and change the ownership of a file and a directory to limit who can access them.
+
+As a security analyst, setting appropriate access permissions is critical to protecting sensitive information and maintaining the overall security of a system.
 <br />
 
 
-<h2>Languages and Utilities Used</h2>
+<h2>Scenario </h2>
+I will examine and manage the permissions on the files in the /home/researcher2/projects directory for the researcher2 user.
 
-- <b>PowerShell</b> 
-- <b>Diskpart</b>
+The researcher2 user is part of the research_team group.
+
+I will check the permissions for all files in the directory, including any hidden files, to make sure that permissions align with the authorization that should be given. When it doesn't, I will change the permissions.
 
 <h2>Environments Used </h2>
 
 - <b>Windows 10</b> (21H2)
 
-<h2>Program walk-through:</h2>
+<h2>Check file and Directory details:</h2>
 
 <p align="center">
 Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="[https://i.imgur.com/6/JoGoYdA" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 Select the disk:  <br/>
