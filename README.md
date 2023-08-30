@@ -20,15 +20,15 @@ The researcher2 user is part of the research_team group.
 
 I will check the permissions for all files in the directory, including any hidden files, to make sure that permissions align with the authorization that should be given. When it doesn't, I will change the permissions.
 
-<h2>Environments Used </h2>
-
-- <b>Windows 10</b> (21H2)
 
 <h2>Check file and Directory details:</h2>
 
 <p align="center">
-Launch the utility: <br/>
-<img src="[https://i.imgur.com/6/JoGoYdA" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Launch the utility:
+<img scr="https:
+
+//github.com/Bridgetanntighe/ActiveDirectoryLab/assets/134883216/07f4127e-9d12-481f-a1dd-0f41a898cfb8" height="80%" width="80%" alt="Disk Sainitization Steps"/>
+<img src="[https://https://i.imgur.com/JoGoYdA.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 Select the disk:  <br/>
