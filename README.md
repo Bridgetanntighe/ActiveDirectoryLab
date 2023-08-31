@@ -25,7 +25,8 @@ The lab starts with <i>/home/researcher2</i> as the current working directory. T
 1. The <i>cd</i> projects command navigates to the projects directory. <br>
 2. The <i>ls -l</i> command lists the contents and permissions of the projects directory. This shows the <i>reserch_team</i> owns the files in the projects directory.<br>
 3. The <i>ls -la</i> command shows whether any hidden files exist in the projects directory. This shows the <i>.project_x.txt</i> file is hidden. <br>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+<img src="https://github.com/Bridgetanntighe/ActiveDirectoryLab/assets/134883216/e013dd2b-5ccd-41f9-b21f-d23331ec5f372" height="80%" width="80%" alt="Active Directory Lab"/>
 
 <h2>Change file permissions:</h2>
 This shows whether any files have incorrect permissions and then change the permissions as needed. This action will remove unauthorized access and strengthen security on the system. <br>
@@ -35,7 +36,10 @@ This shows whether any files have incorrect permissions and then change the perm
 3. The file <i>project_m.txt</i> is a restricted file and should not be readable or writable by the group or other; only the user should have these permissions on this file. The <i>ls -l</i> command lists the contents and permissions of the current directory and check if the group has read or write permissions. This shows the group permissions of the <i>project_m.txt</i> file is read only. <br>
 4. Using the <i>chmod</i> command changes permissions of the <i>project_m.txt</i> file so that the group doesn’t have read or write permissions. <br>
 
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/Bridgetanntighe/ActiveDirectoryLab/assets/134883216/813dcde0-f7bb-42ab-9130-1c0b83816deb" height="80%" width="80%" alt="Active Directory Lab"/>
+
+
+
 
 <h2>Change file permissions on a hidden file:</h2>
 Next I will determine if a hidden file has incorrect permissions and then change the permissions as needed. This action will further remove unauthorized access and strengthen security on the system.<br>
@@ -43,6 +47,8 @@ The file <i>.project_x.txt</i> is a hidden file that has been archived and shoul
 1. Check the permissions of the hidden file <i>.project_x.txt</i> and answer the question that follows. The command to complete this step is <i>ls -la</i>. This shows the user and owner types have inncorrect write permissions. <br>
 2. I will change the permissions of the file <i>.project_x.txt</i> so that both the user and the group can read, but not write to, the file using the <i>chmod u-w,g-w,g+r .project_x.txt</i> <br>
 <b><i>Note - Always start the name of a hidden file with a period (.)</b></i> <br>
+<img src="https://github.com/Bridgetanntighe/ActiveDirectoryLab/assets/134883216/98defd4f-0ea7-49cd-a9d2-68618fed5d1c" height="80%" width="80%" alt="Active Directory Lab"/>
+
 
 <h2>Change directory permissions:</h2>
 Finally, I will change the permissions of a directory. First, I'll check the group permissions of the <i>/home/researcher2/projects/drafts</i> directory and then modify the permissions as required. (It's important to be in the projects directory while managing the permissions of its subdirectory drafts.) <br>
@@ -50,7 +56,9 @@ Only the <i>researcher2</i> user should be allowed to access the drafts director
 1. I will check the permissions of the drafts directory and answer the following question using the <i>ls -l</i> command. It shows the group has execute permissions and therefore has access to the drafts directory. <br>
 2. I will remove the execute permission for the group from the drafts directory with the <i>chmod</i> command.<br>
 
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/Bridgetanntighe/ActiveDirectoryLab/assets/134883216/c9e9370e-0de3-46a0-86b9-f162055665af" height="80%" width="80%" alt="Active Directory Lab"/>
+
+
 
 <h2>Conclusion </h2>
 This demonstates practical experience using basic Linux Bash shell commands to
