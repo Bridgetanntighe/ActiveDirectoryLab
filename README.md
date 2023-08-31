@@ -44,7 +44,7 @@ The file <i>.project_x.txt</i> is a hidden file that has been archived and shoul
 2. I will change the permissions of the file <i>.project_x.txt</i> so that both the user and the group can read, but not write to, the file using the <i>chmod u-w,g-w,g+r .project_x.txt</i> <br>
 <b><i>Note - Always start the name of a hidden file with a period (.)</b></i> <br>
 
-<h2>Change directory permissions</h2>
+<h2>Change directory permissions:</h2>
 Finally, I will change the permissions of a directory. First, I'll check the group permissions of the <i>/home/researcher2/projects/drafts</i> directory and then modify the permissions as required. (It's important to be in the projects directory while managing the permissions of its subdirectory drafts.) <br>
 Only the <i>researcher2</i> user should be allowed to access the drafts directory and its contents. (This means that only researcher2 should have execute privileges.) <br>
 1. I will check the permissions of the drafts directory and answer the following question using the <i>ls -l</i> command. It shows the group has execute permissions and therefore has access to the drafts directory. <br>
